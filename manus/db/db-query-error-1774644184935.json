@@ -1,8 +1,0 @@
-{
-  "query": "\nALTER TABLE search_progress ADD UNIQUE KEY uq_search_source (searchId, source);\n",
-  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 31sQcrUAF8umDkP.root --database ijQraLMyU3Wek48zSQ8zQz --execute \nALTER TABLE search_progress ADD UNIQUE KEY uq_search_source (searchId, source);\n",
-  "returncode": 1,
-  "logs": [
-    "ERROR 1062 (23000) at line 2: Duplicate entry '?' for key 'search_progress.uq_search_source'"
-  ]
-}
