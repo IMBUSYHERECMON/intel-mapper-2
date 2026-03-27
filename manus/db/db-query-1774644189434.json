@@ -1,0 +1,9 @@
+{
+  "query": "\nDELETE sp1 FROM search_progress sp1\nINNER JOIN search_progress sp2\nWHERE sp1.id > sp2.id AND sp1.searchId = sp2.searchId AND sp1.source = sp2.source;\n\nALTER TABLE search_progress ADD UNIQUE KEY uq_search_source (searchId, source);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 31sQcrUAF8umDkP.root --database ijQraLMyU3Wek48zSQ8zQz --execute \nDELETE sp1 FROM search_progress sp1\nINNER JOIN search_progress sp2\nWHERE sp1.id > sp2.id AND sp1.searchId = sp2.searchId AND sp1.source = sp2.source;\n\nALTER TABLE search_progress ADD UNIQUE KEY uq_search_source (searchId, source);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 372
+}
